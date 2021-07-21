@@ -21,7 +21,12 @@ namespace BlogWarmUp.Controllers
         // GET: Posts
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Posts.ToListAsync());
+            List<Post> postList = await _context.Posts.ToListAsync();
+
+            postList = postList.OrderByDescending(x => x.Date).ToList();
+
+
+            return View(postList);
         }
 
         // GET: Posts/Details/5
