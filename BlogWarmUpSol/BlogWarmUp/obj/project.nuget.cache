@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UCx1ZrIrYIPMfuZck9cDy6NNWacVw5QXD7E7mYNvITrKhEqWfQdQ8V5YVtswoEehZ49g/9fSYBUfhKal0OMBlw==",
+  "dgSpecHash": "zf+CaK+fQgDL6HbaykXZaKGp3lOwOCTiivfskg+Rdd2exB8luMQKpHeIC0D0xvYQAf0/bo/cYKc2p/kSkOExNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\BlogWarmUp.csproj",
+  "projectFilePath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\BlogWarmUp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chiar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\chiar\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

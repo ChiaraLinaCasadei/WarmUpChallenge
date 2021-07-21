@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\BlogWarmUp.csproj": {}
+    "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\BlogWarmUp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\BlogWarmUp.csproj": {
+    "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\BlogWarmUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\BlogWarmUp.csproj",
+        "projectUniqueName": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\BlogWarmUp.csproj",
         "projectName": "BlogWarmUp",
-        "projectPath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\BlogWarmUp.csproj",
+        "projectPath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\BlogWarmUp.csproj",
         "packagesPath": "C:\\Users\\chiar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUp\\BlogWarmUp\\obj\\",
+        "outputPath": "C:\\Users\\chiar\\OneDrive\\Escritorio\\WarmUpChallenge\\BlogWarmUpSol\\BlogWarmUp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chiar\\AppData\\Roaming\\NuGet\\NuGet.Config",

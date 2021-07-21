@@ -12,7 +12,7 @@ namespace BlogWarmUp.Models
         public int ID { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        //imagen
+        public string ImageUrl { get; set;}
         public string Category { get; set; }
         public DateTime Date { get; set; }
 
