@@ -25,8 +25,23 @@ namespace BlogWarmUp.Controllers
 
             postList = postList.OrderByDescending(x => x.Date).ToList();
 
+            List<string[]> post_without_content = new List<string[]>();
 
-            return View(postList);
+            foreach(Post p in postList)
+            {
+                string[] fixedPost = { "", "", "", "", "" };
+
+                fixedPost[0] = p.ID.ToString();
+                fixedPost[1] = p.Title;
+                fixedPost[2] = p.ImageUrl;
+                fixedPost[3] = p.Date.ToString();
+
+                post_without_content.Add(fixedPost);
+                
+            }
+
+
+            return View(post_without_content);
         }
 
         // GET: Posts/Details/5
@@ -34,14 +49,14 @@ namespace BlogWarmUp.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return NotFound("Ingress an ID");
             }
 
             var post = await _context.Posts
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (post == null)
             {
-                return NotFound();
+                return NotFound("Invalid ID");
             }
 
             return View(post);
@@ -74,13 +89,13 @@ namespace BlogWarmUp.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return NotFound("Ingress an ID");
             }
 
             var post = await _context.Posts.FindAsync(id);
             if (post == null)
             {
-                return NotFound();
+                return NotFound("Invalid ID");
             }
             return View(post);
         }
@@ -125,14 +140,14 @@ namespace BlogWarmUp.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return NotFound("Ingress an ID");
             }
 
             var post = await _context.Posts
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (post == null)
             {
-                return NotFound();
+                return NotFound("Invalid ID");
             }
 
             return View(post);

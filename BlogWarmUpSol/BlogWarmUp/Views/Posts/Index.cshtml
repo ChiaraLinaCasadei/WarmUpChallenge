@@ -1,10 +1,10 @@
-﻿@model IEnumerable<BlogWarmUp.Models.Post>
+﻿@model IEnumerable<string[]>
 
 @{
     ViewData["Title"] = "Home";
 }
 
-<h1>Home</h1>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                Title
             </th>
             
             <th></th>
@@ -23,13 +23,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
+                @Html.DisplayFor(modelItem => item[1])
             </td>
  
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item[0]">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item[0]">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item[0]">Delete</a>
             </td>
         </tr>
 }
