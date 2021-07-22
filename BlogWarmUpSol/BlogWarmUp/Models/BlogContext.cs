@@ -12,6 +12,19 @@ namespace BlogWarmUp.Models
             : base(options)
         {
         }
+
+        public override int SaveChanges()
+        {
+            //Soft Delete
+            foreach(var item in ChangeTracker.Entries()
+                .Where(e => e.State == EntityState.Deleted &&
+                       e.Metadata.GetProperties().Any(x => x.Name == "isDeleted")))
+            {
+                item.State = EntityState.Unchanged;
+                item.CurrentValues["isDeleted"] = true;
+            }
+            return base.SaveChanges();
+        }
         public DbSet<Post> Posts { get; set; }
     }
 }

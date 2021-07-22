@@ -29,12 +29,13 @@ namespace BlogWarmUp.Controllers
 
             foreach(Post p in postList)
             {
-                string[] fixedPost = { "", "", "", "", "" };
+                string[] fixedPost = { "", "", "", "", "","" };
 
                 fixedPost[0] = p.ID.ToString();
                 fixedPost[1] = p.Title;
                 fixedPost[2] = p.ImageUrl;
                 fixedPost[3] = p.Date.ToString();
+                fixedPost[4] = p.isDeleted.ToString();
 
                 post_without_content.Add(fixedPost);
                 
@@ -160,7 +161,7 @@ namespace BlogWarmUp.Controllers
         {
             var post = await _context.Posts.FindAsync(id);
             _context.Posts.Remove(post);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
 

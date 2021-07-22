@@ -15,6 +15,7 @@ namespace BlogWarmUp.Models
         public string ImageUrl { get; set;}
         public string Category { get; set; }
         public DateTime Date { get; set; }
+        public bool isDeleted { get; set;}
 
     }
 }
